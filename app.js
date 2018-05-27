@@ -8,7 +8,10 @@ new Vue({
 
 	methods: {
 		punch: function(){
-			this.health -= 10;
+			this.health -= 20;
+			if(this.health < 100) {
+
+			}
 			if(this.health <= 0) {
 				this.ended = true;
 			}
@@ -20,7 +23,7 @@ new Vue({
 
 		punchSound: function(sound) {
 			this.punch();
-			
+
 			if(sound) {
 				var audio = new Audio(sound);
 				audio.play();

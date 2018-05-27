@@ -18,7 +18,12 @@
 
 #bag-health div{
     height: 20px;
-    background: green
+    background: green;
+}
+
+.bag-red {
+	  height: 20px;
+    background: red !important;
 }
 
 #bag-controls{
