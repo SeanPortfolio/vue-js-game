@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>vue js sample</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			<!-- bag image -->
+			<div id="bag">
+				
+			</div>
+			<!-- bag health -->
+			<div id="bag-health">
+				<div :style="{width: health + '%'}">
+					
+				</div>
+			</div>
+			
+			<!-- bag controls -->
+			<div id="bag-controls">
+				<button @click="punchSound('audio/Realistic_Punch-Mark_DiAngelo-1609462330.wav')" v-show="!ended">Punch</button>
+				<button @click="restart">Restart</button>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
